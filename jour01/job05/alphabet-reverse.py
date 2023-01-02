@@ -1,2 +1,3 @@
-for letter in "zyxwvutsrqponmlkjihgfedcba":
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+for letter in reversed(alphabet):
     print(letter)
