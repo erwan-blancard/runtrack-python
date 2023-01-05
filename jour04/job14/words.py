@@ -1,12 +1,18 @@
 def get_words_greater_than_n(n, sentence):
     words = []
     chars = ""
-    for i in sentence:
-        if i != " ":
-            chars += i
-        else:
+    i = 0
+    for c in sentence:
+        if i == get_lenght(sentence) - 1:
+            chars += c
             words += [chars]
-            chars = ""
+        else:
+            if c != " ":
+                chars += c
+            else:
+                words += [chars]
+                chars = ""
+        i += 1
 
     for word in words:
         if get_lenght(word) > n:
