@@ -1,11 +1,14 @@
 def round_numbers_list(list):
-    list = sort_list(list)
     i = 0
     while i < get_lenght(list):
-        list[i] ="%1d" % list[i]
+        if list[i] % 1 >= 0.5:
+            list[i] = (list[i] + 1) // 1
+        else:
+            list[i] = list[i] // 1
+
         i += 1
 
-    return list
+    return sort_list(list)
 
 
 def sort_list(list):
