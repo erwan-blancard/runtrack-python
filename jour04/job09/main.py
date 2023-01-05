@@ -17,4 +17,11 @@ def liste_max_min():
     print(last_min_value)
     print(last_max_value)
 
+def liste_max_min_court():
+    L = [8, 24, 27, 48, 2, 16, 9, 102, 7, 84, 91]
+    print(min(L))
+    print(max(L))
+
 liste_max_min()
+
+liste_max_min_court()
